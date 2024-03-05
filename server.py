@@ -24,11 +24,11 @@ def generateText(
 ) -> str:
 
     vertexai.init(project=project, location=location)
-    
+
     # override these parameters as needed:
     parameters = {
         "temperature": 0.0,  # Temperature controls the degree of randomness in token selection -  0.0–1.0
-        "max_output_tokens": 50,  # Token limit determines the maximum amount of text output. - 1–1024
+        "max_output_tokens": 100,  # Token limit determines the maximum amount of text output. - 1–1024
         "top_p": 0.8,  # Tokens are selected from most probable to least until the sum of their probabilities equals the top_p value. - 0.0–1.0
         "top_k": 1,  # A top_k of 1 means the selected token is the most probable among all tokens. - 1–40
     }
