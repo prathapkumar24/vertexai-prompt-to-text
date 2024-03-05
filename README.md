@@ -17,9 +17,20 @@
 ## Install Necessary Libraries
 - Install Python and necessary Python libraries for working with Google Cloud services and PALM2 text generation.
 - Include libraries such as `vertexai`, `flask` and `google-auth`.
+  
+## Configuration Setup
 
+To configure your Flask application with the required project ID and location, follow these steps:
+
+1. **Create Config File**: 
+   - Create a JSON configuration file named `config.json` in the `config/` directory.
+
+2. **Specify Parameters**:
+   - Add the following parameters to `config.json`:
+     - `"project_id": "your-project-id"`
+     - `"location": "us-central1"`
+   
 ## Write and Run the Script
-- Write a Python script (`server.py` for example) for serving the text generation model.
 - Run this command from your project: `python server.py`.
 
 ## Make API Call
